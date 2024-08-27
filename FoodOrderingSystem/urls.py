@@ -24,5 +24,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", landingPage ),
     path("register/", register_page , name="register_page" ),
+    path("sign-up/", signup_page , name="signup_page" ),
+
 
 ]

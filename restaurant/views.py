@@ -5,6 +5,11 @@ from django.shortcuts import render
 def register_page(request):
 
     
+    return render(request, "register.html")
+
+def signup_page(request):
+
+    
     return render(request, "login.html")
 
 

@@ -43,11 +43,14 @@ body {
 }
 .form-control{
       margin: 0 0 0 13px;
-    height: 35px;
+    /* height: 35px;
+     */
+     padding: 10px;
     border-radius: 6px;
 }
 .sub-box{
   display: flex;
+  margin: 0px 0px 20px 0;
 }
 .label1{
   margin-left: 10px;
@@ -137,8 +140,16 @@ form .page .btns button.next {
 }
 .container .progress-bar {
   display: flex;
-  margin: 40px 0;
+  width: 15.4rem;
+  margin: 20px 0;
   user-select: none;
+  justify-content: center;
+}
+.main-progress{
+  display: flex;
+    justify-content: center;
+    align-items: center; /* This line is optional if you want to center it vertically */
+    flex-direction: column;
 }
 .container .progress-bar .step {
   text-align: center;
@@ -180,9 +191,9 @@ form .page .btns button.next {
   position: absolute;
   content: "";
   bottom: 11px;
-  right: -51px;
+  right: -99px;
   height: 3px;
-  width: 44px;
+  width: 98px;
   background: #262626;
 }
 .progress-bar .step .bullet.active:after {

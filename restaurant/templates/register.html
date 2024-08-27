@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multistep form</title>
+  <title>Restaurant Registration form</title>
   <!-- <link rel="stylesheet" type="text/css" href="static/css/register.css"> -->
   <link href="{% static 'register_css/register.css'%}" rel="stylesheet" />
 
@@ -16,6 +16,7 @@
     <body>
         <div class="container">
             <header>Signup Form</header>
+            <div class="main-progress">
             <div class="progress-bar">
                 <div class="step">
                     <p>Name</p>
@@ -31,7 +32,7 @@
                     </div>
                     <div class="check fas fa-check"></div>
                 </div>
-                <div class="step">
+                <!-- <div class="step">
                     <p>Birth</p>
                     <div class="bullet">
                         <span>3</span>
@@ -58,7 +59,8 @@
                         <span>6</span>
                     </div>
                     <div class="check fas fa-check"></div>
-                </div>
+                </div> -->
+            </div>
             </div>
             <div class="form-outer">
                 <form action="#">
@@ -80,22 +82,13 @@
                             <div class="label">Contact Phone Number</div>
                             <input type="text" required />
                         </div>
-                        <div class="field" style="margin: 0px 0; height: 10px;">
-                            <div class="label">Address</div>
-                            
-                             
+                        <div class="field">
+                            <div class="label">Create Password</div>
+                            <input type="password" required />
                         </div>
-                        <div class="sub-box">
-                        <div class="sub-field">
-                            <div class="label">Street: </div> <br>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                           
-                        </div>
-                         <div class="sub-field">
-                            <div class="label1">City: </div> <br>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                           
-                        </div>  
+                         <div class="field">
+                            <div class="label">Re-type Password</div>
+                            <input type="password" required />
                         </div>
                         
                         <div class="field">
@@ -106,13 +99,35 @@
                     <div class="page">
                         <div class="title">Contact Info:</div>
                         <div class="field">
-                            <div class="label">Email Address</div>
+                            <div class="label">Cuisine Type</div>
                             <input type="text" required />
                         </div>
                         <div class="field">
-                            <div class="label">Phone Number</div>
-                            <input type="Number" required />
+                            <div class="label">Location Link</div>
+                            <input type="text" placeholder="Please provide location link" required />
                         </div>
+                        <div class="field" style="margin: 0px 0; height: 10px;">
+                            <div class="label">Address</div>
+                            
+                        </div>
+                        <div class="sub-box">
+                            <div class="sub-field" style="margin-left: 10px;">
+                            <div class="label">Country: </div> <br>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                           
+                        </div>
+                        <div class="sub-field" style="margin-left: 15px;">
+                            <div class="label">Street: </div> <br>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                           
+                        </div>
+                          
+                        </div>
+                        <div class="sub-field">
+                            <div class="label1">City: </div> <br>
+                            <input type="text" style="margin-left: 43px;" class="form-control" id="firstName" placeholder="" value="" required="">
+                           
+                        </div> 
                         <div class="field btns">
                             <button class="prev-1 prev">Previous</button>
                             <button class="next-1 next">Next</button>
