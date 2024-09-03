@@ -18,3 +18,5 @@ def signup_page(request):
     return render(request,"signup.html")
 
 
+
+
